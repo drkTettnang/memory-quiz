@@ -1,3 +1,3 @@
 # memory-quiz
 
-!()[doc/screenshot.png]
+![Screenshot](doc/screenshot.png)
