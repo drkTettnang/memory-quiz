@@ -1,0 +1,61 @@
+[{
+   "question": "Nenne mindestens 3 Fachdienstausbildungen des DRK.",
+   "points": 30,
+   "answer": "Sanitätsdienst, Betreuungsdienst, Technik und Sicherheit, Verpflegung, Fernmeldedienst"
+}, {
+   "question": "An welchem Datum wurde das DRK erstmalig gegründet?",
+   "points": 100,
+   "answer": "25. Januar 1921"
+}, {
+   "question": "Welche Fahnenfarben gibt es bei Kolonnenfahrten und welche Bedeutung haben sie?",
+   "points": 50,
+   "answer": "Blau: Erstes bis vorletztes Fahrzeug des Verbandes<br/>Grün:\tLetztes Fahrzeug im Verband<br/>Gelb:\tDefektes/Beschädigtes Fahrzeug<br/>Rot:\tFahrzeug, von dem erhöhte Gefahr ausgeht."
+}, {
+   "question": "Innerhalb welcher Zeit muss ein Gruppenleiter die Gruppenleiterausbildung nach seiner Wahl absolvieren?",
+   "points": 10,
+   "answer": "1 Jahr"
+}, {
+   "question": "Wie heißt der Präsident des Deutschen Roten Kreuzes?",
+   "points": 50,
+   "answer": "<div data-img=\"rudolf_seiters.jpg\" data-caption=\"Foto: Sigismund von Dobschütz (CC-BY-SA-3.0)\"/> Rudolf Seiters"
+}, {
+   "question": "Wieviele Kinderrechte gibt es in der UN-Kinderrechtskonvention?",
+   "points": 70,
+   "answer": "54"
+}, {
+   "question": "Nenne mindestens 3 Arten von Schock.",
+   "points": 40,
+   "answer": "Volumenmangel-, kardiogenem, septischem und anaphylaktischem Schock."
+}, {
+   "question": "Welches dieser Tiere schläft die meisten Stunden am Tag?<ul><li>Faultier</li><li>Koala</li><li>Braunbär</li><li>Panda</li></ul>",
+   "points": 50,
+   "answer": "Koala"
+}, {
+   "question": "Wie nennt man ein männliches Schaf?<ul><li>Hengst</li><li>Keiler</li><li>Widder</li><li>Bulle</li></ul>",
+   "points": 10,
+   "answer": "Widder"
+}, {
+   "question": "Wie viele Punkte haben die meisten Marienkäfer?",
+   "points": 70,
+   "answer": "7"
+}, {
+   "question": "<div data-img=\"yak.jpg\" data-caption=\"Foto: Nadeemmushtaque (CC BY-SA 3.0)\"/> Wie heißt dieses Tier?",
+   "points": 30,
+   "answer": "Yak"
+}, {
+   "question": "Welcher Hahn kräht nicht?",
+   "points": 10,
+   "answer": "Wasserhahn"
+}, {
+   "question": "Welches Tier dreht sich nach seinem Tod noch 99 Mal?",
+   "points": 30,
+   "answer": "Das Brathähnchen auf dem Imbiss-Grill!"
+}, {
+   "question": "Wie lange reicht der Sauerstoff einer 2L Flasche bei 180bar, 10bar Restdruck und einer Gabe von 10l/min?",
+   "points": 90,
+   "answer": "(180bar - 10bar) * 2l / (10 l/min) = <b>34min</b>"
+}, {
+   "question": "Nenne mindestens 4 DRK Gemeinschaften.",
+   "points": 30,
+   "answer": "Bereitschaft, Bergwacht, Jugendrotkreuz, die Wasserwacht, Wohlfahrts- und Sozialarbeit"
+}]
