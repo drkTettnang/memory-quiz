@@ -409,6 +409,36 @@ var memoryQuiz;
 
       $.magnificPopup.close();
 
+      var ul = $('<ul>');
+      $('#mq-teams > div').each(function() {
+         var score = $(this).attr('data-score');
+         var name = $(this).text();
+         var li = $('<li>').text(name + ', ' + score + ' Punkte');
+         li.data('score', score);
+
+         ul.find('li').each(function() {
+            var current = $(this);
+            var currentScore = current.data('score');
+
+            if (score > currentScore) {
+               current.before(li);
+               li = null;
+               return false;
+            }
+         });
+
+         if (li) {
+            ul.append(li);
+         }
+      });
+
+      $.magnificPopup.open({
+         items: {
+            src: '<div id="mq-popup"><div><ul class="ranking">' + ul.html() + '</ul></div></div>'
+         },
+         type: 'inline'
+      });
+
       $('#mq-teams, #mq-timer, #mq-container').remove();
    };
 }(jQuery));
