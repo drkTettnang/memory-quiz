@@ -228,8 +228,9 @@ html {
     ul {
         font-size: 0.8em;
         list-style: upper-alpha;
-        padding: 0;
+        padding: 0 0 0 30px;
         margin: 0;
+        text-align: left;
 
         &.ranking {
             list-style: decimal;

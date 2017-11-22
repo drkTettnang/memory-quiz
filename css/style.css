@@ -147,8 +147,8 @@ html {
   display: table-cell;
   text-align: center;
   border-bottom: 5px solid #86c5d5;
-  background-image: -webkit-linear-gradient(#86c5d5 50%, transparent 50%);
-  background-image: linear-gradient(#86c5d5 50%, transparent 50%);
+  background-image: -webkit-linear-gradient(#86c5d5 50%, rgba(0, 0, 0, 0) 50%);
+  background-image: linear-gradient(#86c5d5 50%, rgba(0, 0, 0, 0) 50%);
   background-size: auto 200%;
   background-position: 0 -100%;
   -webkit-transition: background-position 0.5s;
@@ -180,8 +180,8 @@ html {
   text-align: center;
   font-weight: bold;
   box-shadow: 0px 0px 5px black;
-  background-image: -webkit-linear-gradient(#2c89a0 50%, transparent 50%);
-  background-image: linear-gradient(#2c89a0 50%, transparent 50%);
+  background-image: -webkit-linear-gradient(#2c89a0 50%, rgba(0, 0, 0, 0) 50%);
+  background-image: linear-gradient(#2c89a0 50%, rgba(0, 0, 0, 0) 50%);
   background-size: auto 200%;
   background-position: 0 -100%;
 }
@@ -231,8 +231,9 @@ html {
 #mq-popup ul {
   font-size: 0.8em;
   list-style: upper-alpha;
-  padding: 0;
+  padding: 0 0 0 30px;
   margin: 0;
+  text-align: left;
 }
 #mq-popup ul.ranking {
   list-style: decimal;

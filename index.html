@@ -15,15 +15,12 @@
    <script src="vendor/jquery.magnific-popup.min.js"></script>
    <script src="js/memory-quiz.js"></script>
 
-   <script>
-      var start = $('<a>');
-      start.text('Start');
-      start.attr('href', '#');
-      start.one('click', function(){
-         $(this).text('Lade Fragen...');
+   <p><a href="javascript:startQuiz(1)">Einfach</a> <a href="javascript:startQuiz(2)">Mittel</a> <a href="javascript:startQuiz(3)">Schwer</a></p>
 
+   <script>
+      function startQuiz(level) {
          $.ajax({
-            url: 'js/questions.json',
+            url: 'js/questions-' + level + '.json',
             success: function(questions) {
                memoryQuiz({
                   questions: questions
@@ -33,8 +30,7 @@
                console.warn(arguments)
             }
          });
-      });
-      $('body').append(start);
+      }
    </script>
 </body>
 

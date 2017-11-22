@@ -347,7 +347,7 @@ var memoryQuiz;
          div.find('.front div').text(no++);
          div.find('.back').css('background-color', data.altColor);
          div.find('.back').css('background-image', 'url(assets/card-' + data.id + '.jpg)');
-         //div.find('.front').css('background-image', 'url(assets/card-'+data.id+'.jpg)');
+         div.find('.front').css('background-image', 'url(assets/card-' + data.id + '.jpg)');
          //div.find('.front div').text(data.answer);
 
          $(container).append(div);
@@ -411,14 +411,14 @@ var memoryQuiz;
 
       var ul = $('<ul>');
       $('#mq-teams > div').each(function() {
-         var score = $(this).attr('data-score');
+         var score = parseInt($(this).attr('data-score'));
          var name = $(this).text();
          var li = $('<li>').text(name + ', ' + score + ' Punkte');
          li.data('score', score);
 
          ul.find('li').each(function() {
             var current = $(this);
-            var currentScore = current.data('score');
+            var currentScore = parseInt(current.data('score'));
 
             if (score > currentScore) {
                current.before(li);
