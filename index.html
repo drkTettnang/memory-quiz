@@ -14,20 +14,23 @@
    <script src="vendor/jquery.js"></script>
    <script src="vendor/jquery.magnific-popup.min.js"></script>
    <script src="js/memory-quiz.js"></script>
-   
+
    <script>
       var start = $('<a>');
       start.text('Start');
       start.attr('href', '#');
       start.one('click', function(){
          $(this).text('Lade Fragen...');
-         
+
          $.ajax({
             url: 'js/questions.json',
             success: function(questions) {
                memoryQuiz({
                   questions: questions
                });
+            },
+            error: function(){
+               console.warn(arguments)
             }
          });
       });

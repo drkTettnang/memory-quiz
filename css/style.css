@@ -10,6 +10,10 @@
             transform: rotate(360deg);
   }
 }
+html {
+  height: 100%;
+}
+
 #mq-container, #mq-timer, #mq-teams, #mq-popup {
   font-family: Calibri,Arial,Candara,Segoe,Segoe UI,Optima,sans-serif;
 }
@@ -229,6 +233,9 @@
   list-style: upper-alpha;
   padding: 0;
   margin: 0;
+}
+#mq-popup ul.ranking {
+  list-style: decimal;
 }
 #mq-popup .img {
   background-size: cover;

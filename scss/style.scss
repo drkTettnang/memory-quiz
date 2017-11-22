@@ -6,6 +6,10 @@
     }
 }
 
+html {
+    height: 100%;
+}
+
 #mq-container, #mq-timer, #mq-teams, #mq-popup {
     font-family: Calibri,Arial,Candara,Segoe,Segoe UI,Optima,sans-serif;
 }
@@ -226,6 +230,10 @@
         list-style: upper-alpha;
         padding: 0;
         margin: 0;
+
+        &.ranking {
+            list-style: decimal;
+        }
     }
 
     .img {

@@ -108,7 +108,7 @@ var memoryQuiz;
       $('#mq-teams div').removeClass('current');
       $('#mq-teams div:eq(' + currentTeam + ')').addClass('current');
 
-      if ($('#mq-container .card').length <= 0) {
+      if ($('#mq-container .card.active').length <= 0) {
          memoryQuiz.stop();
       }
 
@@ -163,10 +163,12 @@ var memoryQuiz;
 
                if (!options.hideAnswerButton) {
                   var button = $('<a>');
+                  button.attr('id', 'show-answer');
                   button.text('Zeige Antwort');
                   button.click(function() {
                      button.remove();
                      clearInterval(timerInterval);
+                     $('body').off('keypress');
 
                      showAnswer();
 
@@ -212,6 +214,8 @@ var memoryQuiz;
             return;
          }
 
+         $('#show-answer').hide();
+
          clearInterval(timerInterval);
 
          if (options.audio.loggedInStart) {
@@ -251,7 +255,7 @@ var memoryQuiz;
       playAudio('correct');
 
       setTimeout(function() {
-         $('.card.flip').removeClass('flip').find('.flip-container').remove();
+         $('.card.flip').removeClass('flip active').find('.flip-container').remove();
 
          showQuestion(data);
       }, 3000);
@@ -329,7 +333,7 @@ var memoryQuiz;
          data = cardData.splice(i, 1)[0];
 
          div = $('<div><div class="flip-container"><div class="flipper"><div class="front"><div/></div><div class="back"/></div></div></div>');
-         div.addClass('card');
+         div.addClass('card active');
          div.css({
             'transform': 'rotate(' + (Math.ceil(Math.random() * 16) - 8) + 'deg)',
             'position': 'relative',
