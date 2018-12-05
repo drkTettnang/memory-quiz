@@ -3,6 +3,8 @@ var memoryQuiz;
 (function($) {
    "use strict";
 
+   var MAX_QUESTIONS = 18;
+
    var options = {
       audio: {
          correct: null,
@@ -302,6 +304,25 @@ var memoryQuiz;
       playAudio('wait', true);
    }
 
+   function pickRandomQuestions(pool, max_number) {
+      var questions = [];
+
+      if (pool.length < max_number) {
+         return pool;
+      }
+
+      while(questions.length < max_number) {
+         var randomIndex = Math.round(Math.random() * (pool.length - 1));
+         var question = pool[randomIndex];
+
+         pool.splice(randomIndex, 1);
+
+         questions.push(question);
+      }
+
+      return questions;
+   }
+
    memoryQuiz = function(o) {
       var div, i, data, no = 0;
 
@@ -312,6 +333,11 @@ var memoryQuiz;
       if (questions.length <= 0) {
          console.log('No questions available');
          return;
+      }
+
+      if (questions.length > MAX_QUESTIONS) {
+         console.log(`More than ${MAX_QUESTIONS} questions available. I will pick some.`);
+         questions = pickRandomQuestions(questions, MAX_QUESTIONS);
       }
 
       questions.map(function(obj, index) {
