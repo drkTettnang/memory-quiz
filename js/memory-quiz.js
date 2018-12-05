@@ -19,7 +19,8 @@ var memoryQuiz;
       },
       hideAnswerButton: false,
       teams: ['Team A', 'Team B'],
-      questions: []
+      questions: [],
+      debug: false
    };
 
    var currentTeam = 0,
@@ -373,8 +374,10 @@ var memoryQuiz;
          div.find('.front div').text(no++);
          div.find('.back').css('background-color', data.altColor);
          div.find('.back').css('background-image', 'url(assets/card-' + data.id + '.jpg)');
-         div.find('.front').css('background-image', 'url(assets/card-' + data.id + '.jpg)');
-         //div.find('.front div').text(data.answer);
+
+         if (options.debug) {
+            div.find('.front').css('background-image', 'url(assets/card-' + data.id + '.jpg)');
+         }
 
          $(container).append(div);
       }
