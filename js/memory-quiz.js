@@ -4,6 +4,8 @@ var memoryQuiz;
    "use strict";
 
    var MAX_QUESTIONS = 18;
+   var KEY_R = 114;
+   var KEY_F = 102;
 
    var options = {
       audio: {
@@ -213,7 +215,7 @@ var memoryQuiz;
       });
 
       $('body').keypress(function(ev) {
-         if (ev.keyCode !== 114 && ev.keyCode !== 102) {
+         if (ev.keyCode !== KEY_R && ev.keyCode !== KEY_F) {
             return;
          }
 
@@ -234,12 +236,12 @@ var memoryQuiz;
                nextTeam();
             });
 
-            if (ev.key === 'r' || ev.keyCode === 114) {
+            if (ev.key === 'r' || ev.keyCode === KEY_R) {
                addToCurrentTeamScore(data.points);
                $('#mq-popup .answer').addClass('correct');
 
                playAudio('correct2');
-            } else if (ev.key === 'f' || ev.keyCode === 102) {
+            } else if (ev.key === 'f' || ev.keyCode === KEY_F) {
                $('#mq-popup .answer').addClass('wrong');
 
                playAudio('wrong2');
@@ -312,7 +314,7 @@ var memoryQuiz;
          return pool;
       }
 
-      while(questions.length < max_number) {
+      while (questions.length < max_number) {
          var randomIndex = Math.round(Math.random() * (pool.length - 1));
          var question = pool[randomIndex];
 
