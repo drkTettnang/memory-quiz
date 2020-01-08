@@ -17,7 +17,7 @@
 }, {
    "question": "Wie heißt der Präsident des Deutschen Roten Kreuzes?",
    "points": 50,
-   "answer": "<div data-img=\"rudolf_seiters.jpg\" data-caption=\"Foto: Sigismund von Dobschütz (CC-BY-SA-3.0)\"/> Rudolf Seiters"
+   "answer": "<div data-img=\"gerda-hasselfeldt.jpg\" data-caption=\"Foto: Henning Schacht (CC-BY-SA-3.0)\"/> Gerda Hasselfeldt"
 }, {
    "question": "Wieviele Kinderrechte gibt es in der UN-Kinderrechtskonvention?",
    "points": 70,
@@ -58,4 +58,52 @@
    "question": "Nenne mindestens 4 DRK Gemeinschaften.",
    "points": 30,
    "answer": "Bereitschaft, Bergwacht, Jugendrotkreuz, die Wasserwacht, Wohlfahrts- und Sozialarbeit"
+}, {
+   "question": "Von wem stammt das Gemälde der Mona Lisa?",
+   "points": 20,
+   "answer": "Leonardo da Vinci"
+}, {
+   "question": "Für was steht die Abkürzung \"GmbH\"?",
+   "points": 30,
+   "answer": "Gesellschaft mit beschränkter Haftung"
+}, {
+   "question": "Wie heißt Indiens Hauptstadt?",
+   "points": 30,
+   "answer": "Neu-Delhi"
+}, {
+   "question": "Wie lautete der frühere Name Istanbul?",
+   "points": 50,
+   "answer": "Konstantinopel"
+}, {
+   "question": "Wie hieß der erste deutsche Bundeskanzler?",
+   "points": 30,
+   "answer": "Konrad Adenauer"
+}, {
+   "question": "Welcher Schauspieler schaffte es in den USA bis zur Präsidentschaft?",
+   "points": 60,
+   "answer": "Ronald Reagan"
+}, {
+   "question": "Wie nennt sich die Währung in Russland?",
+   "points": 20,
+   "answer": "Rubel"
+}, {
+   "question": "Ein Kubikmeter umfasst wie viel Liter?",
+   "points": 20,
+   "answer": "1.000 Liter"
+}, {
+   "question": "Welcher Fluss ist der längste der Welt?",
+   "points": 30,
+   "answer": "Der Nil"
+}, {
+   "question": "Welches Gebirge teilt Europa und Asien?",
+   "points": 40,
+   "answer": "Ural"
+}, {
+   "question": "Wie hieß der erste Hund im Weltall?",
+   "points": 50,
+   "answer": "Laika"
+}, {
+   "question": "Wer erfand die Jeans?",
+   "points": 30,
+   "answer": "Levi Strauss"
 }]
